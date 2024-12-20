@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/GNUInstallDirs.cmake
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/src/Makefile.inc.cmake
+C:/dev/3rdParty/libssh2/1.11.1/cmake/libssh2-config.cmake.in
+C:/dev/3rdParty/libssh2/1.11.1/libssh2.pc.in
+C:/dev/3rdParty/libssh2/1.11.1/src/CMakeLists.txt
+C:/dev/3rdParty/libssh2/1.11.1/src/Makefile.inc

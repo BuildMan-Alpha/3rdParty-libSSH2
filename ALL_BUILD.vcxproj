@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8AAC2961-5812-3D77-A638-21B90D43A051}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\3rdParty\libssh2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/dev/3rdParty/libssh2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+c:\dev\3rdparty\cmake\x86\3.7.1\bin\cmake.exe -Hc:/dev/3rdParty/libssh2 -BC:/dev/3rdParty/libssh2 --check-stamp-file C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/dev/3rdParty/libssh2/CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\GNUInstallDirs.cmake;C:\dev\3rdParty\libssh2\cmake\max_warnings.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\FeatureSummary.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPack.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\libssh2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/dev/3rdParty/libssh2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+c:\dev\3rdparty\cmake\x86\3.7.1\bin\cmake.exe -Hc:/dev/3rdParty/libssh2 -BC:/dev/3rdParty/libssh2 --check-stamp-file C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/dev/3rdParty/libssh2/CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\GNUInstallDirs.cmake;C:\dev\3rdParty\libssh2\cmake\max_warnings.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\FeatureSummary.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPack.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\libssh2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/dev/3rdParty/libssh2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+c:\dev\3rdparty\cmake\x86\3.7.1\bin\cmake.exe -Hc:/dev/3rdParty/libssh2 -BC:/dev/3rdParty/libssh2 --check-stamp-file C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/dev/3rdParty/libssh2/CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\GNUInstallDirs.cmake;C:\dev\3rdParty\libssh2\cmake\max_warnings.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\FeatureSummary.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPack.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\libssh2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/dev/3rdParty/libssh2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+c:\dev\3rdparty\cmake\x86\3.7.1\bin\cmake.exe -Hc:/dev/3rdParty/libssh2 -BC:/dev/3rdParty/libssh2 --check-stamp-file C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/dev/3rdParty/libssh2/CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeLists.txt;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\libssh2\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\GNUInstallDirs.cmake;C:\dev\3rdParty\libssh2\cmake\max_warnings.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\FeatureSummary.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPack.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\CMake\x86\3.7.1\share\cmake-3.7\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\libssh2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\3rdParty\libssh2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/ZERO_CHECK.vcxproj">
+      <Project>246FF06F-3D51-3412-8401-3C70D702599E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-direct_tcpip.vcxproj">
+      <Project>740B3703-FD76-33A3-9544-E0AB08FEB197</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-scp.vcxproj">
+      <Project>B8A7686A-F8E8-3F33-BC22-0BE3076101F1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-scp_nonblock.vcxproj">
+      <Project>CAB121C3-9541-3CC9-A628-C3FC9CE3EFAC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-scp_write.vcxproj">
+      <Project>7CA2FDF9-F1AA-3667-865B-D5DED8122A4B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-scp_write_nonblock.vcxproj">
+      <Project>86CF22C4-6F5F-3639-97A8-0B1BF44365C5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp.vcxproj">
+      <Project>AE3CBAF0-3B2F-322A-B194-942E928AEA2D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_RW_nonblock.vcxproj">
+      <Project>4A26A2FE-EE8C-3110-BF5D-8D7FCD49A986</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_append.vcxproj">
+      <Project>6A1B1E78-7CED-36E1-AB45-568799E0BFE8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_mkdir.vcxproj">
+      <Project>AE5CB272-67E5-3FFB-881E-D73087B24C06</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_mkdir_nonblock.vcxproj">
+      <Project>254B5488-A88D-32DC-BA9C-B4E8F096A46C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_nonblock.vcxproj">
+      <Project>F7BE4B5C-DD05-38AC-8C35-9497F761748A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_write.vcxproj">
+      <Project>22DE59A5-4D6D-3BF5-BC4A-C653359DE53B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_write_nonblock.vcxproj">
+      <Project>18ADB613-AB30-38BC-B559-2C45F48E997F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftp_write_sliding.vcxproj">
+      <Project>C767C3B5-2323-3B6A-B524-CB9FC44F56AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftpdir.vcxproj">
+      <Project>422BC45B-A74C-3731-A5F6-2C39D6B21F39</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-sftpdir_nonblock.vcxproj">
+      <Project>A78B1CF1-04DD-3BBE-AA6B-EE49F395765C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-ssh2.vcxproj">
+      <Project>1FF40D31-8642-3FE5-A358-272F55983F1C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-ssh2_agent.vcxproj">
+      <Project>7A5082C4-12A2-3703-9F04-1EF9779E6A7B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-ssh2_echo.vcxproj">
+      <Project>47F46BE6-D372-377E-9293-9D8FD5550CC0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-ssh2_exec.vcxproj">
+      <Project>3BE8C2CE-8E4D-3286-945E-6B2FEA84F144</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-subsystem_netconf.vcxproj">
+      <Project>403E78D0-5345-3E7B-A21A-11D8B8CA6049</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/example/example-tcpip-forward.vcxproj">
+      <Project>46CEA4BB-2702-3AF5-8F6A-018870328B51</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/src/libssh2.vcxproj">
+      <Project>9D4884C3-42FE-3277-A34F-781C732F6B29</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/openssh_fixture.vcxproj">
+      <Project>215D2052-638C-3D57-AB89-FE184ADBBE2D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/runner.vcxproj">
+      <Project>901D55BA-71EB-3962-83D8-F9762DB862FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/session_fixture.vcxproj">
+      <Project>71C4BFC6-1F0D-39A8-A52B-17E4CB6C77FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_hostkey.vcxproj">
+      <Project>0569A5FF-F8F1-3E90-80AE-A3E13ECC707A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_hostkey_hash.vcxproj">
+      <Project>0DFF76C7-6E69-3AAE-8D15-37203542C187</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_keyboard_interactive_auth_fails_with_wrong_response.vcxproj">
+      <Project>BFF71DC7-CC03-3F70-8515-A13D3E3734E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_keyboard_interactive_auth_succeeds_with_correct_response.vcxproj">
+      <Project>C3DAF9F5-7397-359C-984F-1898588B6E29</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_password_auth_fails_with_wrong_password.vcxproj">
+      <Project>B77E6DB8-FC6C-3E43-A017-1461E5204C64</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_password_auth_fails_with_wrong_username.vcxproj">
+      <Project>AB985708-A70A-39B0-A2B4-86B8DC720D3D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_password_auth_succeeds_with_correct_credentials.vcxproj">
+      <Project>6C25B327-09EF-363E-86A6-A41B0C469FD3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_public_key_auth_fails_with_wrong_key.vcxproj">
+      <Project>1E110C53-A627-3C2B-BE77-B50E59B9BFEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_public_key_auth_succeeds_with_correct_dsa_key.vcxproj">
+      <Project>C80717F7-75A2-3B13-A70C-5EA6247D4F10</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_public_key_auth_succeeds_with_correct_encrypted_rsa_key.vcxproj">
+      <Project>3368603E-DCD4-3E66-A8BA-177C63F02136</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/3rdParty/libssh2/tests/test_public_key_auth_succeeds_with_correct_rsa_key.vcxproj">
+      <Project>E5F52792-E865-3916-8FF1-13C6645FF7CA</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

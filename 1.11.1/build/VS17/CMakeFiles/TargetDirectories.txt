@@ -1,0 +1,10 @@
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/CMakeFiles/PACKAGE.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/CMakeFiles/INSTALL.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/CMakeFiles/ALL_BUILD.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/CMakeFiles/ZERO_CHECK.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/src/CMakeFiles/libssh2_static.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/src/CMakeFiles/INSTALL.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/src/CMakeFiles/libssh2_shared.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/src/CMakeFiles/PACKAGE.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/docs/CMakeFiles/PACKAGE.dir
+C:/dev/3rdParty/libssh2/1.11.1/build/VS17/docs/CMakeFiles/INSTALL.dir
